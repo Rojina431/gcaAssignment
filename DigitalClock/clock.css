@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#clock{
+    border: 2px solid black;
+    background-color: silver;
+    width: 40%;
+    height: 20%;
+    border-radius: 5px;
+    margin:2rem 2rem;
+    position: absolute;
+}
+
+.time{
+    
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: royalblue;
+    letter-spacing: 1px;
+}
+
+.time h3{
+    float: right;
+    margin-right: 2px;
+    letter-spacing: 1px !important;
+}
+
+@media all and (max-width:400px){
+    #clock{
+        width: fit-content;
+    }
+}
