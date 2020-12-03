@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="maindiv">
+
+          <h1 id="h">Tip Calculator</h1>
+
+        <div id="calculator">
+
+          <form>
+
+     	   <p class="Ps">How much was your bill?</p>
+
+     	   <label for="bill_amount">Rs</label>
+     	   <input type="text" id="bill_amount" placeholder="Enter bill amount">
+
+           <label id='lbltext'style="color:#df2020;visibility:hidden">Enter Value</label>
+
+     	   <p class="Ps">How was the service?</p>
+
+     	   <select id="choose">
+     		<optgroup>
+
+                <option value="0" disabled selected>--Choose an option--</option>
+     			<option value="0.3">30%-Outstanding</option>
+     			<option value="0.20">20%-good</option>
+     			<option value="0.15">15%-not bad</option>
+     			<option value="0.10">10%-bad</option>
+     			<option value="0.05">5%-terrible</option>
+
+     		</optgroup>
+     	   </select>
+
+           <label id='lbtext' style="color:#df2020;visibility:hidden">Choose Value</label>
+
+          </form>
+
+     	  <p class="Ps">How many people are sharing the bill?</p>
+
+     	  <input type="text" id="people" placeholder="Enter no. of people">
+     	  <label for="people">People</label>
+          <br>
+          <label id='peotext'style="color:#df2020;visibility:hidden">No of people must be greater than or equal to one</label>
+     	  <br>
+     	  <br>
+
+     	  <button id="calculate" type="button" onclick="calculating()">Calculate</button>
+
+          <div id="end_div" style="visibility:hidden">
+
+           <h1 id="last">tip amount</h1>
+           <span>Rs</span>
+           <span id="tip">0.00</span><br><h3 id="each">each</h3>
+
+         <!--end of "end_div"-->
+          </div>
+
+        <!--end of "calculator"-->
+        </div>
+
+    <!--end of "maindiv"-->
+    </div>
+
+    <script type="text/javascript"src="calc.js"></script>
+
+</body>
+</html>
